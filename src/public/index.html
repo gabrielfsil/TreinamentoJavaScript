@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Treinamento JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="col-12 mt-5">
+            <div class="card-header">
+                <h3 class="card-title">DOM</h3>
+
+            </div>
+            <div class="card-body">
+
+                <img src="img/DOM.gif" width="100%" />
+
+            </div>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="card-header">
+                <h3 class="card-title">Métodos de Seleção</h3>
+
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">document.getElementById(id)</li>
+                    <li class="list-group-item">document.getElementsByClassName(class)</li>
+                    <li class="list-group-item">document.getElementsByTagName(name)</li>
+                    <li class="list-group-item">document.querySelector</li>
+                    <li class="list-group-item">document.querySelectorAll</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="card-header">
+                <h3 class="card-title">Propriedades</h3>
+
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">document.getElementById("item").innerHTML = conteúdo HTML</li>
+                    <li class="list-group-item">document.getElementById("item").innerText = Texto</li>
+                    <li class="list-group-item">document.getElementById("item").className = Nome da Classe</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="card-header">
+                <h3 class="card-title">Outros Métodos</h3>
+
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">document.createElement(elemento)</li>
+                    <li class="list-group-item">document.removeChild(elemento)</li>
+                    <li class="list-group-item">document.appendChild(elemento)</li>
+                    <li class="list-group-item">document.getElementById("item").addEventListener(event, function)</li>
+                    <li class="list-group-item">document.getElementById("item").setAttribute(atributo, value)</li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-12  mt-5 mb-5">
+            <h2>Exercícios</h2>
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h3 class="card-title">Adicionar tarefas</h3>
+
+                    <div class="input-group mb-3">
+                        <input id="input" type="text" class="form-control" placeholder="Adicionar uma tarefa"
+                            aria-label="Adicionar uma tarefa" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button onclick="adicionarTarefa()" class="btn btn-outline-primary"
+                                type="button">Adicionar</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <h3>Lista de Tarefas</h3>
+                    <ul class="list-group" id="list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
