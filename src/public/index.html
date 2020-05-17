@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Treinamento JavaScript</title>
@@ -11,7 +12,7 @@
 
 <body>
     <div class="container">
-        
+
         <div class="col-12 mt-5">
             <div class="card-header">
                 <h3 class="card-title">DOM</h3>
@@ -33,8 +34,8 @@
                     <li class="list-group-item">document.getElementById(id)</li>
                     <li class="list-group-item">document.getElementsByClassName(class)</li>
                     <li class="list-group-item">document.getElementsByTagName(name)</li>
-                    <li class="list-group-item">document.querySelector</li>
-                    <li class="list-group-item">document.querySelectorAll</li>
+                    <li class="list-group-item">document.querySelector(name)</li>
+                    <li class="list-group-item">document.querySelectorAll(name)</li>
                 </ul>
 
             </div>
@@ -49,6 +50,7 @@
                     <li class="list-group-item">document.getElementById("item").innerHTML = conteúdo HTML</li>
                     <li class="list-group-item">document.getElementById("item").innerText = Texto</li>
                     <li class="list-group-item">document.getElementById("item").className = Nome da Classe</li>
+                    <li class="list-group-item">document.getElementById("item").style.propriedade = Valor da Propriedade</li>
                 </ul>
 
             </div>
@@ -72,6 +74,27 @@
         </div>
         <div class="col-12  mt-5 mb-5">
             <h2>Exercícios</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Animação</h3>
+                </div>
+                <div class="card-body">
+                    <div class="col-12">
+                        <div class="col-12 mb-3">
+                            <div class="row">
+                                <button onclick="deslizar()" class="btn btn-outline-primary">Deslizar</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contexto">
+                            <div class="bloco" id="bloco"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div class="card mt-3">
                 <div class="card-header">
                     <h3 class="card-title">Adicionar tarefas</h3>

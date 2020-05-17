@@ -1,0 +1,13 @@
+.bloco{
+    height: 80px;
+    width: 80px;
+    background-color: #F01;
+    position: absolute;
+}
+
+.contexto{
+    width: 600px;
+    height: 80px;
+    background-color: #999;
+    position: relative;
+}
